@@ -1,0 +1,61 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/connection_header"
+        app:key="connection">
+
+        <EditTextPreference
+            app:key="address"
+            app:title="@string/address_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="TSAP"
+            app:entries="@array/mode_entries"
+            app:entryValues="@array/mode_entries"
+            app:key="mode"
+            app:title="@string/mode_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="local_TSAP"
+            app:defaultValue="1000"
+            app:title="@string/local_TSAP_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="remote_TSAP"
+            app:defaultValue="1000"
+            app:title="@string/remote_TSAP_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="rack"
+            app:defaultValue="0"
+            app:title="@string/rack_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="slot"
+            app:defaultValue="0"
+            app:title="@string/slot_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+<!--    <PreferenceCategory app:title="@string/sync_header">-->
+
+<!--        <SwitchPreferenceCompat-->
+<!--            app:key="sync"-->
+<!--            app:title="@string/sync_title" />-->
+
+<!--        <SwitchPreferenceCompat-->
+<!--            app:dependency="sync"-->
+<!--            app:key="attachment"-->
+<!--            app:summaryOff="@string/attachment_summary_off"-->
+<!--            app:summaryOn="@string/attachment_summary_on"-->
+<!--            app:title="@string/attachment_title" />-->
+
+<!--    </PreferenceCategory>-->
+
+</PreferenceScreen>

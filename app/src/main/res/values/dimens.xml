@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="show_floor">46sp</dimen>
+    <dimen name="floor">32sp</dimen>
+    <dimen name="floor_hint">24sp</dimen>
+</resources>

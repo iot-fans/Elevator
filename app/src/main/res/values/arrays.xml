@@ -1,0 +1,7 @@
+<resources>
+    <!-- Mode Preference -->
+    <string-array name="mode_entries">
+        <item>Rack/Slot</item>
+        <item>TSAP</item>
+    </string-array>
+</resources>
